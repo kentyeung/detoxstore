@@ -1,0 +1,150 @@
+//Add your custom bootstrap variables here, see https://github.com/twbs/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_variables.scss for full list of variables.
+
+$icon-font-path: "../../bootstrap/";
+@import "bootstrap";
+
+body{
+    background-color: #F6EFD2;
+    font-size: 14px;
+    line-height: 200%;
+}
+// -- Spree Custom Header and Footer ---------------------
+#spree-header {
+  background-size: cover;
+    background-color: #4A2F40;
+    height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  #logo {
+color: #F6EFD2;
+  }
+  .nav a {
+    color: #F6EFD2;
+    &:hover {
+      background:rgba(9, 22, 33, 0);
+      text-decoration: underline;
+    }
+  }
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+#spree-footer {
+  background: $gray-dark;
+  padding-top: $padding-base-horizontal;
+  margin-top: $line-height-computed;
+  color: #fff;
+}
+.btn{
+    border-radius: 0px;
+    border: 2px solid;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.btn-success{
+    border-color: #3EB17C;
+    color:#3EB17C;
+}
+.btn-primary{
+    border-color: #C46E56;
+    color:#C46E56;
+}
+// -- Spree Layout Custom Rules -------------------------
+
+//TODO, bug #6
+.alert-error, .alert-registration_error { @extend .alert-danger; }
+.alert-alert { @extend .alert-info; }
+.alert-notice { @extend .alert-info; }
+
+.product-body {
+  height: 170px;
+}
+.progress-steps {
+  margin-top: $line-height-computed;
+}
+h1 {
+  margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+h6{
+    margin-bottom: 0px;
+}
+// -- Product --
+#product-description {
+    margin-top: 65px;
+}
+.product-center{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#product-properties td{
+    border-top: none;
+    padding: 0px;
+    color: #c46E56;
+    font-size: 0.9em;
+}
+
+#quantity {
+    width: 50px;
+}
+#add-to-cart-button{
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#product-price{
+    padding-left: 0px;
+}
+.selling{
+    font-size: 2em;
+}
+#inside-product-cart-form{
+    text-transform: uppercase;
+}
+.product-title{
+    text-transform: uppercase;
+}
+th{
+    background-color: #4A2F40 !important;
+    color: #F6EFD2;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-size: 0.9em;
+    border-bottom: 0px !important;
+}
+
+.line_item_quantity{
+    width: 50px;
+}
+
+#line_items{
+    background-color: #FAF6E4;
+}
+#cart_total td{
+    background-color: #EEEAD8;
+}
+.bottom_cart{
+        background-color: #4A2F40;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#cart-detail{
+    margin-bottom: 0px;
+}
+#checkout-link{
+    margin-left: 20px;
+}
+#update-button{
+    margin-left: 10px;
+}
+.text-primary{
+    color: black;
+}
