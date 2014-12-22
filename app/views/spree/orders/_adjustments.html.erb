@@ -1,8 +1,3 @@
-<thead>
-  <tr data-hook="cart_adjustments_headers">
-    <th class="cart-adjustment-header" colspan="6"><%= Spree.t(:order_adjustments) %></th>
-  </tr>
-</thead>
 <tbody id="cart_adjustments" data-hook>
   <% if @order.line_item_adjustments.exists? %>
     <% @order.line_item_adjustments.promotion.eligible.group_by(&:label).each do |label, adjustments| %>
@@ -15,11 +10,12 @@
   <% end %>
 
   <% @order.shipments.each do |shipment| %>
-    <tr>
-      <td colspan="4" align='right'><h5><%= Spree.t(:shipping) %>: <%= shipment.shipping_method.name %></h5></td>
-      <td colspan='2'>
+    <tr class="adjustment">
+      <td colspan="4" class="cartadjustments" align='right'><h5><%= Spree.t(:shipping) %>: <%= shipment.shipping_method.name %></h5></td>
+      <td colspan class="cartadjustments panel-title">
         <h5><%= shipment.display_discounted_cost %></h5>
       </td>
+        <td class="cartadjustments"></td>
     </tr>
   <% end %>
 

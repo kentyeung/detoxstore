@@ -13,11 +13,13 @@
     <%= render partial: 'line_item', collection: order_form.object.line_items, locals: {order_form: order_form} %>
   </tbody>
   <% if @order.all_adjustments.exists? %>
+<!--
     <tr class="cart-subtotal">
       <td colspan="4" align='right'><h5><%= Spree.t(:cart_subtotal, :count => @order.line_items.sum(:quantity)) %></h5></th>
-      <td colspan><h5><%= order_form.object.display_item_total %></h5></td>
+      <td colspan='1' class="cartadjustments"><h5><%= order_form.object.display_item_total %></h5></td>
       <td></td>
     </tr>
+-->
     <%= render "spree/orders/adjustments" %>
   <% end %>
 <tbody id="cart_total">

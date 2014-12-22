@@ -10,7 +10,7 @@
         <label for="use_existing_card_yes">Use an existing card on file</label>
         <br/>
         <%= radio_button_tag 'use_existing_card', 'no' %>
-        <label for="use_existing_card_no">Use a new card / payment method</label>
+        <label for="use_existing_card_no">Use a new card</label>
       </div>
 
       <div id="existing_cards">
@@ -55,10 +55,6 @@
       <% end %>
     </ul>
 
-    <p class='field' data-hook='coupon_code'>
-      <%= form.label :coupon_code %><br />
-      <%= form.text_field :coupon_code, :class => 'form-control' %>
-    </p>
   </div>
 </div>
 

@@ -8,8 +8,14 @@ body{
     font-size: 14px;
     line-height: 200%;
 }
+h3{
+    text-transform: capitalize;
+}
 h5{
-    font-size:1.6em;
+    font-size:1.2em;
+}
+a{
+    color: #C46E56;
 }
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
@@ -224,7 +230,7 @@ border-bottom-right-radius: 3px;;
 }
 .cart-total{
     border-left: 1px solid #DBD5BA;
-border-right: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
 }
 .cart-item-price{
     text-align:center;
@@ -287,4 +293,35 @@ th:only-child{
 .checkout-well{
     background-color: #4B2F40;
     color: #F6EFD2;
+}
+.list-group-item{
+    background-color: transparent;
+    border:none;
+}
+.cartadjustments{
+    border-top:none !important;
+}
+#cart_adjustments{
+    background-color: #FAF6E4;
+    border-left: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
+}
+.order-number{
+    text-align: center;
+}
+.order-date{
+    text-align: center;
+}
+.order-shipment-state{
+    text-align: center;
+}
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th{
+    background-color: #FAF6E4;
+}
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th{
+    background-color: #EEEAD8;
+}
+.order-summary > tbody > tr > td{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
