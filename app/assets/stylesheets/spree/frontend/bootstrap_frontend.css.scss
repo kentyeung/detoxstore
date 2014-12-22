@@ -8,6 +8,9 @@ body{
     font-size: 14px;
     line-height: 200%;
 }
+h5{
+    font-size:1.6em;
+}
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
   background-size: cover;
@@ -51,6 +54,62 @@ color: #F6EFD2;
     border-color: #C46E56;
     color:#C46E56;
 }
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+.table > thead > tr > th{
+    text-align: center;
+}
+
+.panel-title{
+    text-align: center;
+}
+
+.panel-heading{
+    background-color: #4B2F40 !important;
+    color: #F6EFD1 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.panel-body{
+    background-color: #FAF6E3;
+    border-bottom: 1px solid #DBD5BA;
+    border-left: 1px solid #DBD5BA;
+    border-right: 1px solid #DBD5BA;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 30px;
+}
+
+.panel-default{
+    border-color: none;
+}
+.panel{
+    background-color:none;
+    border: none;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+    background-color: #C66E53;
+    color: #F6EFD1;
+    text-transform: uppercase;
+}
+.nav-pills > li > a{
+    color: black;
+    text-transform: uppercase;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+    margin-top:8px;
+}
+.progress-steps{
+    margin: 0px !important;
+    
+}
+.nav-justified, .nav-tabs.nav-justified{
+    width: 60%;
+    float: right;
+}
 // -- Spree Layout Custom Rules -------------------------
 
 //TODO, bug #6
@@ -93,7 +152,7 @@ h6{
     width: 50px;
 }
 #add-to-cart-button{
-    margin-top: 20px;
+    margin-top: 39px;
     text-transform: uppercase;
 }
 
@@ -101,13 +160,14 @@ h6{
     padding-left: 0px;
 }
 .selling{
-    font-size: 2em;
+    font-size: 3em;
 }
 #inside-product-cart-form{
     text-transform: uppercase;
 }
 .product-title{
     text-transform: uppercase;
+    font-size: 3em;
 }
 th{
     background-color: #4A2F40 !important;
@@ -126,14 +186,31 @@ th{
 
 #line_items{
     background-color: #FAF6E4;
+    border-left: 1px solid #DBD5BA;
+border-right: 1px solid #DBD5BA;
+}
+#cart_total{
+    border-top: 1px solid #DCD6BD;
 }
 #cart_total td{
     background-color: #EEEAD8;
+    padding-top: 30px;
+padding-bottom: 30px;
 }
 .bottom_cart{
         background-color: #4A2F40;
     margin-left: 0px;
     margin-right: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -moz-border-image: asset-url('border.png') 30 30 round;
+    -webkit-border-image: asset-url('border.png') 30 30 round;
+    border-image: asset-url('border.png') 30 30 round;
+    border-bottom:0;
+    border-left:0;
+    border-right:0;
+        border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;;
 }
 
 #cart-detail{
@@ -145,6 +222,69 @@ th{
 #update-button{
     margin-left: 10px;
 }
+.cart-total{
+    border-left: 1px solid #DBD5BA;
+border-right: 1px solid #DBD5BA;
+}
+.cart-item-price{
+    text-align:center;
+}
+.cart-item-quantity{
+    text-align:center;
+}
+.cart-item-total{
+    text-align:center;
+}
+.cart-item-delete{
+    padding-right: 20px !important;
+}
+.cart-item-image{
+    padding-left: 50px !important;
+}
 .text-primary{
     color: black;
+}
+.lead{
+    font-size: 1.6em;
+}
+.order_summary{
+    margin-bottom: 0px;
+}
+.order_summary td{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 30px !important;
+}
+.panel-summary{
+    padding: 0px !important;
+}
+.item-total{
+    
+}
+.total-order{
+    background-color: #EEEAD7;
+}
+#total-cart{
+    text-align: center;
+}
+th:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+th:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+th:only-child{
+    border-radius: 3px 3px 0 0;
+}
+#cart-table{
+    margin-bottom: 20px;
+}
+.product-section-title{
+    margin-bottom: 10px
+}
+.checkout-well{
+    background-color: #4B2F40;
+    color: #F6EFD2;
 }
