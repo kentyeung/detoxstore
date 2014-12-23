@@ -52,3 +52,9 @@ gem 'rails_12factor', group: :production
 
 # Use Spree Subscriptions 2.3
 gem 'spree_subscriptions', github: 'mcsweeneys/spree-subscriptions', branch: 'master'
+
+# Use Spree Account recurring 2.3
+gem 'spree_account_recurring', github: 'gpongelli/spree-account-recurring', branch: '2-3-stable'
+
+# Use Spree Payment Gateway 2.3
+gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-3-stable'
