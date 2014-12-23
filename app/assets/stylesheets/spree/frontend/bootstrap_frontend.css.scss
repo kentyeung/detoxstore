@@ -55,6 +55,7 @@ color: #F6EFD2;
     background-color: transparent;
     padding-left: 15px;
     padding-right: 15px;
+    text-transform: uppercase;
 }
 .btn-success{
     border-color: #3EB17C;
@@ -183,7 +184,6 @@ th{
     background-color: #4A2F40 !important;
     color: #F6EFD2;
     text-transform: uppercase;
-    font-weight: 200;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
     font-size: 0.9em;
@@ -256,6 +256,7 @@ border-bottom-right-radius: 3px;;
 }
 .lead{
     font-size: 1.6em;
+    font-family: 'Sentinel SSm A', 'Sentinel SSm B'; font-weight: 800; font-style: normal;
 }
 .order_summary{
     margin-bottom: 0px;
